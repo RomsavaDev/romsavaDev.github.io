@@ -242,10 +242,6 @@ textarea.input {
     padding: 10px 18px;
 }
 
-.header {
-    max-height: 150px;
-}
-
 .header__body {
     display: flex;
     font-size: 0;
@@ -253,13 +249,34 @@ textarea.input {
     align-items: center;
 }
 
+@media (max-width: 767.98px) {
+    .header__body {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .header__logo {
     width: 300px;
+}
+
+@media (max-width: 767.98px) {
+    .header__logo {
+        width: 200px;
+    }
 }
 
 .header__logo img {
     max-width: 100%;
     height: auto;
+}
+
+@media (max-width: 767.98px) {
+    .header__menu {
+        margin: 0px 0px 10px 0px;
+    }
 }
 
 .header__menu-list {
@@ -313,8 +330,20 @@ textarea.input {
     width: 100%;
 }
 
+@media (max-width: 767.98px) {
+    .header__menu-item {
+        font-size: 15px;
+    }
+}
+
 .header__contacts {
     font-size: 20px;
+}
+
+@media (max-width: 767.98px) {
+    .header__contacts {
+        font-size: 15px;
+    }
 }
 
 .header__contacts-number {
@@ -369,6 +398,12 @@ textarea.input {
     z-index: 10;
 }
 
+@media (max-width: 767.98px) {
+    .main__text-title {
+        font-size: 30px;
+    }
+}
+
 .main__text-desc {
     position: absolute;
     top: 100px;
@@ -376,6 +411,15 @@ textarea.input {
     max-width: 500px;
     text-align: center;
     z-index: 10;
+}
+
+@media (max-width: 767.98px) {
+    .main__text-desc {
+        position: static;
+        text-align: center;
+        font-size: 16px;
+        margin: 20px 0px 0px 0px;
+    }
 }
 
 .benefits__body {
