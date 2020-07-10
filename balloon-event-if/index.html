@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
 <head>
-	<title>Document</title>
+	<title>Balloon.event.if</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="assets/css/style.css?v1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=0">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
 </head>
 <body>
 	<div class="wrapper">
@@ -19,7 +39,7 @@
 								<li><a href="#main" class="header__menu-item">Про нас</a></li>
 								<li><a href="#services" class="header__menu-item">Послуги</a></li>
 								<li><a href="#price" class="header__menu-item">Прайс</a></li>
-								<li><a href="#" class="header__menu-item">Галерея</a></li>
+								<li><a href="#gallary" class="header__menu-item">Галерея</a></li>
 							</ul>
 						</nav>
 						<div class="header__contacts">
@@ -36,7 +56,7 @@
 					</div>
 					<div class='container'>
 						<div class="main__text">
-							<div class="main__text-title"><h1>ВІТАЄМО Вас на нашому сайті!</h1></div>
+							<div class="main__text-title "><h1>ВІТАЄМО Вас на нашому сайті!</h1></div>
 							<div class="main__text-desc">Оформлення та декор — дуже важлива деталь будь-якого свята! Адже це надає тематики Вашому святу, особливої атмосфери та святкового настрою! Саме тому balloon.event пропонує Вам комплексне оформлення. День народження, хрестини, відкриття магазину чи будь-яке інше святкування! У нас є повний спектр декорування, candy-бар, індивідуальний підхід до кожного клієнта, безліч креативних рішень та ідей для Вашого свята! Тож створіть його разом з нами!</div>
 							
 						</div>
@@ -102,36 +122,393 @@
 					<div class='container'>
 						<div class="price__title title">Прайс-лист</div>
 						<div class="price__candy-bar">
+							<div class="body-list__subtitle subtitle">Десерти для кенді-бару:</div>
 							<div class="body-list">
-								<!-- <div class="body-list__title title">Десерти для кенді-бару</div> -->
 								<ul class="candi-bar__list">
-									<li> <span>Тематичні пряники від</span><span>30грн/шт</span></li>
-									<li><span>Макарон з друком зображення</span><span>25грн/шт</span></li>
-									<li><span>Макарон</span> <span>22грн/шт</span></li>
-									<li><span>Кейк-попси</span> <span>20грн/шт</span></li>
-									<li><span>Ескімо(кейк-попс у формі морозива)</span> <span>23грн/шт</span></li>
-									<li><span>Мусовий десерт в стаканчику</span> <span>25грн/шт</span></li>
-									<li><span>Пана-кота в стаканчику</span> <span>23грн/шт</span></li>
-									<li><span>Міні павлова</span> <span>20грн/шт</span></li>
-									<li><span>Капкейки</span> <span>30грн/шт</span></li>
-									<li><span>Зефір</span> <span>10грн/шт</span></li>
-									<li><span>Мусові тістечка</span> <span>30грн/шт</span></li>
-									<li><span>Тарти</span> <span>40грн/шт</span></li>
+									<li><span>Тематичні пряники від</span><span>30 грн/шт</span></li>
+									<li><span>Макарон з друком зображення</span><span>25 грн/шт</span></li>
+									<li><span>Макарон</span> <span>22 грн/шт</span></li>
+									<li><span>Кейк-попси</span> <span>20 грн/шт</span></li>
+									<li><span>Ескімо(кейк-попс у формі морозива)</span> <span>23 грн/шт</span></li>
+									<li><span>Мусовий десерт в стаканчику</span> <span>25 грн/шт</span></li>
+									<li><span>Пана-кота в стаканчику</span> <span>23 грн/шт</span></li>
+									<li><span>Міні павлова</span> <span>20 грн/шт</span></li>
+									<li><span>Капкейки</span> <span>30 грн/шт</span></li>
+									<li><span>Зефір</span> <span>10 грн/шт</span></li>
+									<li><span>Мусові тістечка</span> <span>30 грн/шт</span></li>
+									<li><span>Тарти</span> <span>40 грн/шт</span></li>
 								</ul>
 							</div>
+							<div class="body-list__subtitle subtitle subtitle--important">
+							Мінімальне замовлення одного десерту - 6шт!</div>
 						</div>
-						<div class="price__cakes"></div>
-						<div class="price__balloons"></div>
+						<div class="price__cakes cakes-price">
+							<div class="cakes-price__subtitle subtitle">Кремові торти</div>
+							<div class="cakes-price__list body-list">
+								<ul class="cakes-price__list candi-bar__list">
+									<li><span>Йогуртовий (пухкий ванільний бісквіт та ніжний йогуртовий крем) </span><span>220 грн/кг</span></li>
+									<li><span>Малина – маскарпоне (ванільний бісквіт, крем з маскарпоне та малинове конфі)</span><span>280 грн/кг</span></li>
+									<li><span>Молочна дівчинка (10-12 тонких коржів із згущеним молоком, ніжний вершковий крем, персики або банани на вибір)</span><span>280 грн/кг</span></li>
+									<li><span>Снікерс (шоколадні коржі, домашня карамель з арахісом, крем з маскарпоне та ніжний мас на молочному шоколаді)</span><span>300 грн/кг</span></li>
+									<li><span>Вишня - шоколад (шоколадні коржі, конфі із пряної вишні, крем з маскарпоне та мус на темному шоколаді)</span><span>300 грн/кг</span></li>
+									
+									<li><span>Лимонний (лимонний бісквіт, крем маскарпоне та ніжний лимонний мус) </span><span>300 грн/кг</span></li>
+									<li><span>Манго-маракуя (ванільний бісквіт, крем маскарпоне, ганаш на білому шоколаді з пюре манго та маракуї)</span><span>320 грн/кг</span></li>
+								</ul>
+				
+							</div>
+							<div class="cakes-price__subtitle subtitle">ТОРТИ В КЛАСИЧНОМУ ОФОРМЛЕННІ</div>
+							<div class="cakes-price__list body-list">
+								<ul class="cakes-price__list candi-bar__list">
+									<li><span>Наполеон</span><span>180грн/кг</span></li>
+									<li><span>Медовий</span><span>200грн/кг</span></li>
+								</div>
+								<div class="cakes-price__subtitle subtitle subtitle--important">Мінімальне замовлення - від 1,5 кг <br /> Декор - від 70 грн</div>
+							</div>
+							<div class="price__balloons balloons-price">
+								<div class="balloons-price__latex">
+									<div class="body-list__subtitle subtitle">КУЛЬКИ ГЕЛІЄВІ ЛАТЕКСНІ:</div>
+									<div class="body-list">
+										<ul class="balloons-price__list candi-bar__list">
+											<li><span>Однотонна кулька</span><span>25 грн/шт</span></li>
+											<li><span>Кулька з конфетті</span><span>З5 грн/шт</span></li>
+											<li><span>Хром</span><span>З5 грн/шт</span></li>
+											<li><span>Агат</span><span>З5 грн/шт</span></li>
+											<li><span>Bubbles (залежить від розміру)</span><span>150-200 грн/шт</span></li>
+											<li><span>Кульки гіганти (залежить від розміру)</span><span>100-200 грн/шт</span></li>
+										</ul>
+									</div>
+									
+								</div>
+								<div class="balloons-price__foil">
+									<div class="body-list__subtitle subtitle">КУЛЬКИ ГЕЛІЄВІ ФОЛЬГОВАНІ:</div>
+									<div class="body-list">
+										<ul class="balloons-price__list candi-bar__list">
+											<li><span>Сердечко/зірка/круг</span><span>70 грн/шт</span></li>
+											<li><span>Сердечко/зірка/круг з фабричним 
+												надписом/малюнком 
+											</span><span>85 грн/шт</span></li>
+											<li><span>Цифри золото/срібло </span><span>140 грн/шт</span></li>
+											<li><span>Кольорові цифри </span><span>від 200 грн/шт</span></li>
+											<li><span>Великі фігури </span><span>від 140 грн/шт</span></li>
+											<li><span>Фотозони</span><span>від 1500 грн</span></li>
+											
+										</ul>
+									</div>
+									<div class="body-list__subtitle subtitle subtitle--important">
+									Усі кульки попередньо оброблені для кращого та довшого польоту</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				<section class="gallary" id="gallary">
+					<div class='container'>
+						<div class="gallary__title title">Галерея</div>
+						<div class="gallary__cakes cakes-galary">
+							<div class="cakes-gallary__subtitle subtitle">Наші торти</div>
+							<div class="cakes-gallary__body gallary__body">
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery" href="../assets/img/gallary/cakes/1.jpg"><img src="assets/img/gallary/cakes/tn/1_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery" href="../assets/img/gallary/cakes/2.jpg"><img src="assets/img/gallary/cakes/tn/2_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery" href="../assets/img/gallary/cakes/3.jpg"><img src="assets/img/gallary/cakes/tn/3_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery" href="../assets/img/gallary/cakes/4.jpg"><img src="assets/img/gallary/cakes/tn/4_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery" href="../assets/img/gallary/cakes/5.jpg"><img src="assets/img/gallary/cakes/tn/5_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery" href="../assets/img/gallary/cakes/6.jpg"><img src="assets/img/gallary/cakes/tn/6_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery" href="../assets/img/gallary/cakes/7.jpg"><img src="assets/img/gallary/cakes/tn/7_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery" href="../assets/img/gallary/cakes/8.jpg"><img src="assets/img/gallary/cakes/tn/8_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery" href="../assets/img/gallary/cakes/9.jpg"><img src="assets/img/gallary/cakes/tn/9_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery" href="../assets/img/gallary/cakes/10.jpg"><img src="assets/img/gallary/cakes/tn/10_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery" href="../assets/img/gallary/cakes/11.jpg"><img src="assets/img/gallary/cakes/tn/11_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery" href="../assets/img/gallary/cakes/12.jpg"><img src="assets/img/gallary/cakes/tn/12_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery" href="../assets/img/gallary/cakes/13.jpg"><img src="assets/img/gallary/cakes/tn/13_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery" href="../assets/img/gallary/cakes/14.jpg"><img src="assets/img/gallary/cakes/tn/14_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery" href="../assets/img/gallary/cakes/15.jpg"><img src="assets/img/gallary/cakes/tn/15_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery" href="../assets/img/gallary/cakes/16.jpg"><img src="assets/img/gallary/cakes/tn/16_tn.jpg"></a>
+								</div>
+				
+				
+							</div>
+						</div>
+				
+				
+						<div class="gallary__cakes cakes-galary">
+							<div class="cakes-gallary__subtitle subtitle">Наші тістечка та прянники</div>
+							<div class="cakes-gallary__body gallary__body">
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/1.jpg"><img src="assets/img/gallary/cookies/tn/1_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/2.jpg"><img src="assets/img/gallary/cookies/tn/2_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/3.jpg"><img src="assets/img/gallary/cookies/tn/3_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/4.jpg"><img src="assets/img/gallary/cookies/tn/4_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/5.jpg"><img src="assets/img/gallary/cookies/tn/5_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/6.jpg"><img src="assets/img/gallary/cookies/tn/6_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/7.jpg"><img src="assets/img/gallary/cookies/tn/7_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/8.jpg"><img src="assets/img/gallary/cookies/tn/8_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/9.jpg"><img src="assets/img/gallary/cookies/tn/9_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/10.jpg"><img src="assets/img/gallary/cookies/tn/10_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/11.jpg"><img src="assets/img/gallary/cookies/tn/11_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/12.jpg"><img src="assets/img/gallary/cookies/tn/12_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/13.jpg"><img src="assets/img/gallary/cookies/tn/13_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/14.jpg"><img src="assets/img/gallary/cookies/tn/14_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/15.jpg"><img src="assets/img/gallary/cookies/tn/15_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/16.jpg"><img src="assets/img/gallary/cookies/tn/16_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/17.jpg"><img src="assets/img/gallary/cookies/tn/17_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/18.jpg"><img src="assets/img/gallary/cookies/tn/18_tn.jpg"></a>
+								</div>
+				
+								<div class="cakes-gallary__item gallary__item">
+									<a data-fancybox="gallery3" href="assets/img/gallary/cookies/19.jpg"><img src="assets/img/gallary/cookies/tn/19_tn.jpg"></a>
+								</div>
+				
+				
+							</div>
+						</div>
+				
+				
+						<div class="gallary__balloons balloons-gallary">
+							<div class="balloons-gallary__subtitle subtitle">Наші фотозони та повітряні кульки</div>
+							<div class="balloons-gallary__body gallary__body">
+				
+								<div class="balloons-gallary__item gallary__item"><a data-fancybox="gallery2" href="assets/img/gallary/balloons/1.jpg"><img src="assets/img/gallary/balloons/tn/1_tn.jpg"></a></div>
+				
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/2.jpg"><img src="assets/img/gallary/balloons/tn/2_tn.jpg"></a>
+								</div>
+				
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/3.jpg"><img src="assets/img/gallary/balloons/tn/3_tn.jpg"></a>
+								</div>
+				
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/4.jpg"><img src="assets/img/gallary/balloons/tn/4_tn.jpg"></a>
+								</div>
+				
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/5.jpg"><img src="assets/img/gallary/balloons/tn/5_tn.jpg"></a>
+								</div>
+				
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/6.jpg"><img src="assets/img/gallary/balloons/tn/6_tn.jpg"></a>
+				
+								</div>
+				
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/7.jpg"><img src="assets/img/gallary/balloons/tn/7_tn.jpg"></a>
+								</div>
+				
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/8.jpg"><img src="assets/img/gallary/balloons/tn/8_tn.jpg"></a>
+								</div>
+				
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/9.jpg"><img src="assets/img/gallary/balloons/tn/9_tn.jpg"></a>
+								</div>
+				
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/10.jpg"><img src="assets/img/gallary/balloons/tn/10_tn.jpg"></a>
+								</div>
+				
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/11.jpg"><img src="assets/img/gallary/balloons/tn/11_tn.jpg"></a>
+								</div>
+				
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/12.jpg"><img src="assets/img/gallary/balloons/tn/12_tn.jpg"></a>
+								</div>
+				
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/13.jpg"><img src="assets/img/gallary/balloons/tn/1_tn.jpg"></a>
+								</div>
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/1.jpg"><img src="assets/img/gallary/balloons/tn/13_tn.jpg"></a>
+								</div>
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/14.jpg"><img src="assets/img/gallary/balloons/tn/14_tn.jpg"></a>
+								</div>
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/15.jpg"><img src="assets/img/gallary/balloons/tn/15_tn.jpg"></a>
+								</div>
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/16.jpg"><img src="assets/img/gallary/balloons/tn/16_tn.jpg"></a>
+								</div>
+								<div class="balloons-gallary__item gallary__item">
+									<a data-fancybox="gallery2" href="assets/img/gallary/balloons/17.jpg"><img src="assets/img/gallary/balloons/tn/17_tn.jpg"></a>
+								</div>
+				
+				
+							</div>
+							
+				
+				
+						</div>
 					</div>
 				</section>
 			</div>
-						<footer class="footer">
+			<section class="contacts">
+				<div class='container'>
+					<div class="contacts__title title">Напишіть нам :)</div>
+					<div class="contacts__body">
+						<div class="contacts__item">
+							<a class="" href="viber://chat?number=%2B380665723242">Viber <img src="assets/img/footer/viber.svg" alt="" /></a>
+						</div>
+						<div class="contacts__item">
+							<a class="" href="https://telegram.me/%2B380665237227">Telegram <img src="assets/img/footer/telegram.svg" alt="" /></a>
+						</div>
+					</div>
+				</div>
+			</section>
 			
-						</footer>
+			
+			
+			<footer class="footer">
+				<div class='container'>
+			
+					<div class="footer__body">
+			
+						<div class="footer__column">
+							<div class="footer__item item-org"></div>
+							<div class="item-org__data">
+								<div class="item-org__foto"></div>
+								<div class="item-org__name"></div>
+							</div>
+							<div class="item-org__social"></div>
+						</div>
+			
+			
+			
+						<div class="footer__column">
+							<div class="footer__item item-logo"></div>
+							<div class="item-logo__logo">
+								<img src="assets/img/footer/main_logo.png" alt="" />
+							</div>
+							<div class="item-logo__social">
+								<a target="_blank" href="https://www.facebook.com/balloon.event.if/"><img src="assets/img/footer/icons/1.png" alt="" /></a>
+								<a target="_blank" href="https://www.instagram.com/balloon.event.if/"><img src="assets/img/footer/icons/2.png" alt="" /></a>
+								<a href="viber://chat?number=%2B380665723242"><img src="assets/img/footer/icons/3.png" alt="" /></a>
+								<a href=""><img src="assets/img/footer/icons/4.png" alt="" /></a>
+							</div>
+							<div class="item-logo__name">BALLOON EVENT AGENCY</div>
+							<div class="item-logo__copyright">© Івано-Франківськ 2020</div>
+							<div class="item-logo__creator"></div>
+						</div>
+			
+			
+						<div class="footer__column">
+							<div class="footer__item item-org"></div>
+							<div class="item-org__data">
+								<div class="item-org__foto"></div>
+								<div class="item-org__name"></div>
+							</div>
+							<div class="item-org__social"></div>
+						</div>
+			
+			
+			
+					</div>
+			
+				</div>
+			</footer>
 		</main>
 	</div>
-	<script src="https://maps.google.com/maps/api/js?sensor=false&amp;key="&language=en></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="assets/js/app.js"></script>
+		<script src="https://maps.google.com/maps/api/js?sensor=false&amp;key="&language=en></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="assets/js/app.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 </html>
