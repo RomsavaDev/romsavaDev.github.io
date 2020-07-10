@@ -426,8 +426,15 @@ textarea.input {
 
 @media (max-width: 767.98px) {
     .main__text-title {
+        font-size: 30px;
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .main__text-title {
         font-size: 25px;
-        margin: 10px 0px 0px 0px;
+        margin: 5px 0px 0px 0px;
     }
 }
 
@@ -451,7 +458,6 @@ textarea.input {
 
 @media (max-width: 479.98px) {
     .main__text-desc {
-        font-size: 14px;
         margin: 5px 0px 0px 0px;
     }
 }
