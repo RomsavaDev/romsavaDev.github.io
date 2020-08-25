@@ -427,14 +427,14 @@ textarea.input {
 @media (max-width: 767.98px) {
     .main__text-title {
         font-size: 30px;
-        margin: 20px 0px 0px 0px;
+        margin: 20px 0px 20px 0px;
     }
 }
 
-@media (max-width: 479.98px) {
+@media (max-width: 340px) {
     .main__text-title {
         font-size: 25px;
-        margin: 5px 0px 0px 0px;
+        margin: 5px 0px 5px 0px;
     }
 }
 
